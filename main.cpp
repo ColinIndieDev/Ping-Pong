@@ -169,8 +169,8 @@ class Decoration
     static void Draw()
     {
         DrawLine(static_cast<float>(SCREEN_WIDTH) / 2, 0, static_cast<float>(SCREEN_WIDTH) / 2, static_cast<float>(SCREEN_HEIGHT), WHITE);
-        DrawCircleLines(0, 200, static_cast<float>(SCREEN_HEIGHT) / 2, RED);
-        DrawCircleLines(static_cast<float>(SCREEN_WIDTH), 200, static_cast<float>(SCREEN_HEIGHT) / 2, BLUE);
+        DrawCircleLines(0, static_cast<float>(SCREEN_HEIGHT) / 2, static_cast<float>(SCREEN_HEIGHT) / 4, RED);
+        DrawCircleLines(static_cast<float>(SCREEN_WIDTH), static_cast<float>(SCREEN_HEIGHT) / 2, static_cast<float>(SCREEN_HEIGHT) / 4, BLUE);
     }
 };
 

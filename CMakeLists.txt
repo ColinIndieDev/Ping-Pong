@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.31)
-project(Ping_Pong)
+project(Ping-Pong)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -26,14 +26,14 @@ if (NOT raylib_FOUND)
     endif()
 endif()
 
-add_executable(Ping_Pong main.cpp)
-target_link_libraries(Ping_Pong PRIVATE raylib)
+add_executable(Ping-Pong main.cpp)
+target_link_libraries(Ping-Pong PRIVATE raylib)
 
 # Web-specific options
 if(PLATFORM STREQUAL "Web")
-    set_target_properties(Ping_Pong PROPERTIES SUFFIX ".html")
+    set_target_properties(Ping-Pong PROPERTIES SUFFIX ".html")
 
-    target_link_options(Ping_Pong PRIVATE
+    target_link_options(Ping-Pong PRIVATE
             "-sUSE_GLFW=3"
             "-sASYNCIFY"
             "-sFULL_ES2=1"
